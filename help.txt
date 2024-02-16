@@ -1,0 +1,10 @@
+update # all apt & flatpak pkgs, run every day.
+ranger # file browser
+bat [file] # show text file
+htop # system monitor
+fzf # fuzzy file search
+krita # paint
+play [mp3] || ffplay [options] [mp3]
+vlc [any video]
+
+

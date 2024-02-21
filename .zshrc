@@ -141,7 +141,7 @@ alias open="bash -x /usr/bin/xdg-open"
 alias update="sudo nala update ; sudo nala upgrade ; flatpak update -y" # i think nala returns !0 on update even if a only a single failed.. 
 alias play="ffplay -v 0 -nodisp -autoexit"
 alias ranger='. ranger'
-alias r="ranger"
+alias ra="ranger"
 
 yeet(){
   git add .
@@ -182,7 +182,7 @@ stopwatch() {
 alias ll="exa -a -l -g --icons"
 alias ls="exa -a  --icons"
 # show file previews for fzf using bat
-alias fp="fzf --preview 'lolcat {} | head -n 50'"
+alias fp="fzf --preview 'batcat -P {} | head -n 50'"
 
 
 export LS_COLORS="$LS_COLORS:ow=34;40"

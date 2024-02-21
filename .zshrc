@@ -1,7 +1,5 @@
 #neofetch
-alias bonsai="cbonsai -t 0.0003 -l -m \"Hello there :)\" -p -L"
-bonsai $(($LINES * 1.1))
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+#Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -142,7 +140,9 @@ alias update="sudo nala update ; sudo nala upgrade ; flatpak update -y" # i thin
 alias play="ffplay -v 0 -nodisp -autoexit"
 alias ranger='. ranger'
 alias ra="ranger"
+alias bonsai="cbonsai -t 0.0001 -l -m \"Hello there :)\" -p -L"
 
+#
 yeet(){
   git add .
   if [ "$1" != "" ]
@@ -199,4 +199,5 @@ export VISUAL=vim;
 export EDITOR=vim;
 
 
+bonsai $(($LINES * 1.1))
 [ -f "/home/benno/.ghcup/env" ] && source "/home/benno/.ghcup/env" # ghcup-env

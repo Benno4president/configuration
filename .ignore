@@ -1,0 +1,27 @@
+# https://stackoverflow.com/questions/66382994/how-to-start-fzf-from-a-different-directory-than-the-current-working-directory?rq=1
+
+# start by igoring every home directory
+anaconda3/
+arch/
+cache/
+code/
+Desktop/
+venv/
+.env/
+# now un-ignore the ones I care about
+!code/
+!Desktop/
+!Documents/
+!Downloads/
+!Music/
+!Videos/
+
+backup/
+nltk_data/
+Pictures
+Postman/
+Public/
+R/
+snap/
+Templates/
+zsh-syntax-highlighting/

@@ -1,6 +1,6 @@
 #neofetch
-
-cbonsai -t 0.0003 -l -m "Hello there :)" -p -L 29
+alias bonsai="cbonsai -t 0.0003 -l -m \"Hello there :)\" -p -L"
+bonsai $(($LINES * 1.1))
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -92,7 +92,7 @@ source $ZSH/oh-my-zsh.sh
 # two commands to install zsh-syntax-highlighting
 # git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 # echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
-source /home/benno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+#source /home/benno/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -193,6 +193,10 @@ function fbt(){
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# ranger
+export VISUAL=vim;
+export EDITOR=vim;
 
 
 [ -f "/home/benno/.ghcup/env" ] && source "/home/benno/.ghcup/env" # ghcup-env

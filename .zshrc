@@ -1,5 +1,6 @@
 #neofetch
 
+cbonsai -t 0.0003 -l -m "Hello there :)" -p -L 29
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -135,10 +136,12 @@ alias venv=". venv/bin/activate || . .env/bin/activate"
 alias nvenv="deactivate"
 alias cat="lolcat"
 alias bat="batcat -P"
+alias lsg="ls -a | egrep"
 alias open="bash -x /usr/bin/xdg-open"
 alias update="sudo nala update ; sudo nala upgrade ; flatpak update -y" # i think nala returns !0 on update even if a only a single failed.. 
 alias play="ffplay -v 0 -nodisp -autoexit"
 alias ranger='. ranger'
+alias r="ranger"
 
 yeet(){
   git add .
@@ -146,7 +149,7 @@ yeet(){
     then
     git commit -m "$1"
     else
-    git commit -m "somebody help"
+    git commit -m "Added and/or removed something maybe"
   fi
   git push   
 }

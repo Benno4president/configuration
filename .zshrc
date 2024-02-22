@@ -142,8 +142,9 @@ alias play="ffplay -v 0 -nodisp -autoexit"
 alias ranger='. ranger'
 alias ra="ranger"
 alias bonsai="cbonsai -t 0.0001 -l -m \"Hello there :)\" -p -L"
-
+alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""
 bonsai $(($LINES * 1.1))
+
 
 
 #
@@ -153,7 +154,8 @@ yeet(){
     then
     git commit -m "$1"
     else
-    git commit -m "Added and/or removed something maybe"
+    export rnd_msg=$(bat $HOME/code/configuration/gitcommit.txt | rndl)
+    git commit -m $rnd_msg #"Added and/or removed something maybe"
   fi
   git push   
 }

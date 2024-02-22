@@ -25,6 +25,7 @@ sudo nala install -y \
 	vlc \
 	exa \
 	fzf \
+	cbonsai \
 #	gobjc++ \
 #	gcc-multilib \
 #	clisp \

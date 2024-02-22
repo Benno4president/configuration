@@ -1,0 +1,6 @@
+.vimrc|symlink|
+.zshrc|symlink|
+.ignore|symlink|
+.gitconfig|symlink|
+rc.conf|symlink|.config/ranger
+

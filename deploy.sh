@@ -39,4 +39,4 @@ deployManifest() {
 }
 
 echo "--- Common configs ---"
-deployManifest MANIFEST
+deployManifest recipe

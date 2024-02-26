@@ -1,8 +1,9 @@
 Powerwashed the readme
-removed bugs i created
+removed the bugs i created
 created the bugs ill find tomorrow
 removed the private files, wups
-Set fire to the code
+Sat fire to the code
 removed the loadbearing bus.. again
-writing this was like a eating gravel
+writing this was like eating gravel
 haha changes
+This needs more websockets

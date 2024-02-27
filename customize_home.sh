@@ -5,9 +5,11 @@
 #this creates some directories in the home folder. Your system probably already has a few of these, but they are
 #listed for the sake of completion.
 #You won't want some of these. Delete them, and add whatever you need.
-#mkdir -p ~/Art \
+mkdir -p 
+	~/Art \
+	~/Books \
+	~/Code \
 #	~/Battles \
-#	~/Books \
 #	~/Dev \
 #	~/Documents \
 #	~/Downloads \

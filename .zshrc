@@ -145,16 +145,21 @@ alias bonsai="cbonsai -t 0.00004 -l -m \"Hello there :)\" -p -L"
 alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""
 #bonsai $(($LINES * 1.1))
 
-imgdump(){
-  if [ "$1" != "" ] 
-    then
-    xclip -selection c -t image/png -o > "$1"
+dump() {
+    if [ -z "$1" ]; then
+        echo "Usage: dump <output_file>"
+        return 1
+    fi
+
+    if xclip -selection c -t image/png -o > "$1"; then
+        echo "[OK] Clipboard saved to image file '$1'"
+    elif xclip -selection c -o > "$1"; then
+        echo "[OK] Clipboard saved to text file '$1'"
     else
-    echo "arg should be image name"
-  fi
+        echo "Failed to save clipboard to file. No text or image found."
+        return 1
+    fi
 }
-
-
 
 yeet(){
   git add .

@@ -145,9 +145,17 @@ alias bonsai="cbonsai -t 0.00004 -l -m \"Hello there :)\" -p -L"
 alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""
 #bonsai $(($LINES * 1.1))
 
+imgdump(){
+  if [ "$1" != "" ] 
+    then
+    xclip -selection c -t image/png -o > "$1"
+    else
+    echo "arg should be image name"
+  fi
+}
 
 
-#
+
 yeet(){
   git add .
   if [ "$1" != "" ]

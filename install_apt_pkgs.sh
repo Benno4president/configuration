@@ -26,6 +26,7 @@ sudo nala install -y \
 	exa \
 	fzf \
 	cbonsai \
+	xclip \
 #	gobjc++ \
 #	gcc-multilib \
 #	clisp \

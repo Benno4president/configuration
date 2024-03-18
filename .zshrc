@@ -12,7 +12,6 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
-export FZF_DEFAULT_COMMAND="fdfind . $HOME"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -82,7 +81,6 @@ DISABLE_AUTO_TITLE="true"
 plugins=(
 	git 
 	zsh-syntax-highlighting 
-	fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -143,6 +141,7 @@ alias ranger='. ranger'
 alias ra="ranger"
 alias bonsai="cbonsai -t 0.00004 -l -m \"Hello there :)\" -p -L"
 alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""
+alias cpc="xclip -sel c < "
 #bonsai $(($LINES * 1.1))
 
 dump() {
@@ -196,16 +195,14 @@ stopwatch() {
     done
 }
 
-
-# map exa commands to normal ls commands
-alias ll="exa -a -l -g --icons"
-alias ls="exa -a  --icons"
-# show file previews for fzf using bat
-alias fp="fzf --preview 'batcat -P {} | head -n 50'"
-
-
+# exa maps
 export LS_COLORS="$LS_COLORS:ow=34;40"
+alias ls="exa --grid --all --icons"
+alias ll="exa --long --all --icons"
+alias tree="exa --tree --level=3 --all --icons --ignore-glob='.git'"
 
+
+# random freqtrade qol command
 function fbt(){
   freqtrade backtesting -c config.json -s $1 --timerange=$2
 }

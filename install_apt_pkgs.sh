@@ -22,11 +22,8 @@ sudo nala install -y \
 	gimp \
 	krita \
 	libreoffice libreoffice-gtk \
-	vlc \
-	exa \
-	fzf \
 	cbonsai \
-	xclip \
+	exa \
 #	gobjc++ \
 #	gcc-multilib \
 #	clisp \
@@ -50,12 +47,13 @@ sudo nala install -y \
 	vim \
 	ffmpeg \
 	feh \
-	wordgrinder \
 	htop \
 	git \
 	curl \
 	lolcat \
         bat \
+	xclip \
+	vlc \
 	#x11-xserver-utils \
 	#screen \
 	#xboxdrv \

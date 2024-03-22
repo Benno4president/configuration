@@ -199,7 +199,7 @@ stopwatch() {
 export LS_COLORS="$LS_COLORS:ow=34;40"
 alias ls="exa --grid --all --icons"
 alias ll="exa --long --all --icons"
-alias tree="exa --tree --level=3 --all --icons --ignore-glob='.git'"
+alias tree="exa --tree --level=3 --all --icons --ignore-glob='.git|__pycache__'"
 
 
 # random freqtrade qol command

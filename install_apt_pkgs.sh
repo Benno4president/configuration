@@ -24,7 +24,7 @@ sudo nala install -y \
 	libreoffice libreoffice-gtk \
 	cbonsai \
 	exa \
-	texlive-latex-base texlive-fonts-recommended texlive-fonts-extra \
+	texlive-latex-base texlive-xetex texlive-fonts-recommended texlive-fonts-extra \
 	pandoc \
 #	gobjc++ \
 #	gcc-multilib \

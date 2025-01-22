@@ -56,6 +56,8 @@ sudo nala install -y \
         bat \
 	xclip \
 	vlc \
+	fortune-mod \
+	cowsay \
 	#x11-xserver-utils \
 	#screen \
 	#xboxdrv \

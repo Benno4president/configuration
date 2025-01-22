@@ -142,6 +142,9 @@ alias ra="ranger"
 alias bonsai="cbonsai -t 0.00004 -l -m \"Hello there :)\" -p -L"
 alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""
 alias cpc="xclip -sel c < "
+
+### Terminal startup print
+fortune | cowsay | lolcat
 #bonsai $(($LINES * 1.1))
 
 dump() {

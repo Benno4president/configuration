@@ -6,9 +6,9 @@
 #listed for the sake of completion.
 #You won't want some of these. Delete them, and add whatever you need.
 mkdir -p 
-	~/Art \
-	~/Books \
-	~/Code \
+#	~/art \
+#	~/books \
+	~/code \
 #	~/Battles \
 #	~/Dev \
 #	~/Documents \

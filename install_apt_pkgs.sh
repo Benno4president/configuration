@@ -53,7 +53,7 @@ sudo nala install -y \
 	git \
 	curl \
 	lolcat \
-        bat \
+    bat \
 	xclip \
 	vlc \
 	fortune-mod \
@@ -67,6 +67,28 @@ sudo nala install -y \
 sudo nala install -y ranger w3m w3m-img highlight atool caca-utils poppler-utils
 
 ranger --copy-config=all
+
+# snap stuff
+sudo snap install discord
+# vs-codium setup + base packages and themes
+sudo snap install codium --classic
+codium --install-extension foam.foam-vscode
+codium --install-extension formulahendry.code-runner
+codium --install-extension mechatroner.rainbow-csv
+codium --install-extension cweijan.onedark-modern
+codium --install-extension ms-python.black-formatter
+codium --install-extension ms-python.debugpy
+codium --install-extension ms-python.isort
+codium --install-extension ms-python.python
+codium --install-extension ms-toolsai.jupyter
+codium --install-extension ms-toolsai.jupyter-keymap
+codium --install-extension ms-toolsai.jupyter-renderers
+codium --install-extension ms-toolsai.vscode-jupyter-cell-tags
+codium --install-extension ms-toolsai.vscode-jupyter-slideshow
+codium --install-extension pkief.material-icon-theme
+codium --install-extension qwtel.sqlite-viewer
+
+
 
 #dconf-editor is useful on a lot of systems, I only ever use it in elementary to customize pantheon a little bit though. If you don't know you need this, you probably don't.
 #sudo apt install -y dconf-editor
@@ -90,7 +112,7 @@ pip install --upgrade pip
 pip install --upgrade \
 	flask \
 	pandas \
-        streamlit \
+    streamlit \
 	yahoo-fin \
 	yfinance \
 	TA-Lib \

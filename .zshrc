@@ -143,6 +143,7 @@ alias code="codium"
 
 alias bonsai="cbonsai -t 0.00004 -l -m \"Hello there :)\" -p -L"
 alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""
+alias cord="py -c \"R, h = __import__('sys').argv[1:]; R, h = int(R), int(h); print(2*__import__('math').sqrt(2*R*h-(h*h)))\""
 alias cpc="xclip -sel c < "
 alias say="fortune | cowsay | lolcat"
 ### Terminal startup print

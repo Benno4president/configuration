@@ -146,6 +146,9 @@ alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.re
 alias cord="py -c \"R, h = __import__('sys').argv[1:]; R, h = int(R), int(h); print(2*__import__('math').sqrt(2*R*h-(h*h)))\""
 alias cpc="xclip -sel c < "
 alias say="fortune | cowsay | lolcat"
+alias sql="py -c \"import sqlite3 as s3; import sys; cn = s3.connect('test.db'); c=cn.cursor(); arg = sys.argv[1]; print(arg); c.execute(arg); print(c.fetchall()); cn.commit(); cn.close()\""
+
+
 ### Terminal startup print
 say
 #bonsai $(($LINES * 1.1))

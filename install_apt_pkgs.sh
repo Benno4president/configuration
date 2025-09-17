@@ -26,6 +26,7 @@ sudo nala install -y \
 	exa \
 	texlive-latex-base texlive-xetex texlive-fonts-recommended texlive-fonts-extra \
 	pandoc \
+	libimage-exiftool-perl \
 #	gobjc++ \
 #	gcc-multilib \
 #	clisp \

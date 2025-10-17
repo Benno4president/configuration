@@ -142,6 +142,7 @@ alias play="ffplay -v 0 -nodisp -autoexit"
 alias ranger='. ranger'
 alias ra="ranger"
 alias code="codium"
+alias v="nvim"
 
 alias bonsai="cbonsai -t 0.00004 -l -m \"Hello there :)\" -p -L"
 alias rndl="py -c \"print(__import__('random').choice(__import__('sys').stdin.readlines()).strip())\""

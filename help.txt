@@ -7,4 +7,4 @@ play [mp3] || ffplay [options] [mp3]
 vlc [any video]
 exiftool # metadata
 pdfunite # join pdfs
-
+glow # render markdown in terminal

@@ -71,6 +71,7 @@ ranger --copy-config=all
 
 # snap stuff
 sudo snap install discord
+sudo snap install glow
 # vs-codium setup + base packages and themes
 sudo snap install codium --classic
 codium --install-extension foam.foam-vscode
@@ -137,7 +138,7 @@ pip install --upgrade \
 #sudo apt install -y mysql-workbench libmysqlclient-dev mysql-server mysql-utilities libaio1 #libaio1 is a needed library for mysql.
 
 #postgresql and utilities. I use postgresql in my Rails apps.
-#sudo apt install -y postgresql postgresql-contrib libpq-dev
+sudo apt install -y postgresql postgresql-contrib libpq-dev
 
 #this is used for developing gtk3 apps. You may also need it to compile a project from source, if it uses gtk3. I couldn't find a better group to throw this into.
 #sudo apt install -y libgtk-3-dev

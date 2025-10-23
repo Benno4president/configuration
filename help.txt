@@ -2,6 +2,7 @@ update # all apt & flatpak pkgs, run every day.
 ranger # file browser
 bat [file] # show text file
 htop # system monitor
+btop # cooler, but advanced system monitor
 krita # paint
 play [mp3] || ffplay [options] [mp3]
 vlc [any video]

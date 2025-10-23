@@ -72,6 +72,7 @@ ranger --copy-config=all
 # snap stuff
 sudo snap install discord
 sudo snap install glow
+sudo snap install btop
 # vs-codium setup + base packages and themes
 sudo snap install codium --classic
 codium --install-extension foam.foam-vscode

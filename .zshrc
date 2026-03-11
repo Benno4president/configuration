@@ -232,3 +232,4 @@ export EDITOR=vim;
 
 
 [ -f "/home/benno/.ghcup/env" ] && source "/home/benno/.ghcup/env" # ghcup-env
+source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

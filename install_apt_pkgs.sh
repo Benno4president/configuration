@@ -23,7 +23,7 @@ sudo nala install -y \
 	krita \
 	libreoffice libreoffice-gtk \
 	cbonsai \
-	exa \
+	eza \
 	texlive-latex-base texlive-xetex texlive-fonts-recommended texlive-fonts-extra \
 	pandoc \
 	libimage-exiftool-perl \

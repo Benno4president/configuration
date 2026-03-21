@@ -143,6 +143,7 @@ alias update="sudo nala update ; sudo nala upgrade ; flatpak update -y" # i thin
 alias play="ffplay -v 0 -nodisp -autoexit"
 alias ranger='. ranger'
 alias ra="ranger"
+alias codium="flatpak run com.vscodium.codium"
 alias code="codium"
 alias v="nvim"
 

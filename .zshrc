@@ -156,7 +156,10 @@ alias sql="py -c \"import sqlite3 as s3; import sys; import pprint; cn = s3.conn
 alias poe="poetry"
 alias poer="poetry run python3"
 alias fmeta="exiftool -all:all= -overwrite_original"
-
+alias pywc="find . \\( -path './.*' -prune \\) -o \\( -name 'venv' -o -name '.venv' -o -name 'virtualenv' -o -name '.virtualenv' -o -name '__pycache__' \\) -prune -o -type f ! -name '*.csv' -print0 | xargs -0 -- wc -l"
+alias c="cd code/edgerunner"
+alias docs="vim /home/benno/code/edgerunner/edgerunner-docs/docs/dev-diaries/benno.md"
+alias peak="tail -40 /home/benno/code/edgerunner/edgerunner-docs/docs/dev-diaries/benno.md"
 ### Terminal startup print
 say
 #bonsai $(($LINES * 1.1))

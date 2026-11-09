@@ -170,15 +170,32 @@ dump() {
         return 1
     fi
 
-    if xclip -selection c -t image/png -o > "$1"; then
-        echo "[OK] Clipboard saved to image file '$1'"
-    elif xclip -selection c -o > "$1"; then
-        echo "[OK] Clipboard saved to text file '$1'"
+    local type
+    type=$(wl-paste --list-types | grep '^image/' | head -n1)
+
+    if [ -n "$type" ]; then
+        wl-paste --type "$type" > "$1"
+        echo "[OK] Clipboard image saved to '$1'"
     else
-        echo "Failed to save clipboard to file. No text or image found."
-        return 1
+        wl-paste > "$1"
+        echo "[OK] Clipboard text saved to '$1'"
     fi
 }
+#dump() {
+#    if [ -z "$1" ]; then
+#        echo "Usage: dump <output_file>"
+#        return 1
+#    fi
+#
+#    if xclip -selection c -t image/png -o > "$1"; then
+#        echo "[OK] Clipboard saved to image file '$1'"
+#    elif xclip -selection c -o > "$1"; then
+#        echo "[OK] Clipboard saved to text file '$1'"
+#    else
+#        echo "Failed to save clipboard to file. No text or image found."
+#        return 1
+#    fi
+#}
 
 yeet(){
   git add .
